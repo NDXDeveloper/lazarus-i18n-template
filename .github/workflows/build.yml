@@ -37,7 +37,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # The Linux LCL build targets the gtk2 widgetset, which needs its dev
       # libraries to link. Windows uses the native win32 widgetset (nothing to do).
@@ -81,7 +81,7 @@ jobs:
           fi
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: lazarus-i18n-template-${{ runner.os }}
           path: dist/
