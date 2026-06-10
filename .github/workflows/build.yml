@@ -26,7 +26,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
+        include:
+          # Linux: install via the distribution (apt) — reliable, and avoids the
+          # flaky SourceForge .deb download. Ubuntu 24.04 ships Lazarus 3.0 / FPC 3.2.2.
+          - os: ubuntu-latest
+            lazarus-version: dist
+          # Windows: fetch the latest stable Lazarus from the official site.
+          - os: windows-latest
+            lazarus-version: stable
 
     steps:
       - name: Checkout
@@ -40,12 +47,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libgtk2.0-dev
 
-      # Installs Lazarus + FPC on every OS. Pin lazarus-version to e.g. "3.2"
-      # or "3.0" for a fixed toolchain; "stable" tracks the latest release.
+      # Installs Lazarus + FPC. Version is per-OS (see the matrix): "dist" on
+      # Linux (apt), "stable" on Windows (latest official release).
       - name: Install Lazarus + FPC
         uses: gcarreno/setup-lazarus@v3
         with:
-          lazarus-version: stable
+          lazarus-version: ${{ matrix.lazarus-version }}
           with-cache: true
 
       - name: Toolchain versions

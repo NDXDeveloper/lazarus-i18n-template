@@ -72,11 +72,6 @@ function _T(const Section, Key: string; const Default: string = ''): string;
 
 implementation
 
-{$IFDEF WINDOWS}
-uses
-  Windows;
-{$ENDIF}
-
 var
   FLocaleManager: TLocaleManager = nil;
 
@@ -231,14 +226,19 @@ end;
 
 {$IFDEF WINDOWS}
 const
-  { ISO 639-1 two-letter language name (e.g. "fr"). Declared locally so the unit
-    does not depend on whether the Windows unit exposes this constant. }
-  LOCALE_ISO639 = $0059;
+  LOCALE_ISO639 = $0059;   { LOCALE_SISO639LANGNAME — the 2-letter ISO 639-1 code }
+
+{ Import the two WinAPI calls directly rather than via `uses Windows`: that unit
+  would shadow the RTL's FindClose / GetEnvironmentVariable used elsewhere in this
+  unit (the Windows unit declares them with different WinAPI signatures). }
+function GetUserDefaultLCID: DWord; stdcall;
+  external 'kernel32' name 'GetUserDefaultLCID';
+function GetLocaleInfoW(Locale, LCType: DWord; lpLCData: PWideChar;
+  cchData: LongInt): LongInt; stdcall; external 'kernel32' name 'GetLocaleInfoW';
 
 { Native Windows has no LANG/LC_* environment variables; ask the OS instead.
-  GetUserDefaultLCID and GetLocaleInfoW are in the core Windows unit (kernel32);
-  LOCALE_ISO639 (= LOCALE_SISO639LANGNAME) yields the 2-letter ISO 639-1 code.
-  Returns a lowercase code ('fr', 'de', …) or '' on failure. }
+  LOCALE_ISO639 yields the 2-letter ISO 639-1 code. Returns a lowercase code
+  ('fr', 'de', …) or '' on failure. }
 function GetWindowsUserLang: string;
 var
   Buf: array[0..15] of WideChar;
