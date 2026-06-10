@@ -1,0 +1,96 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Spanish language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Spanish - Español
+Code=es
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&Archivo
+FileOpen=&Abrir archivo...
+FileRecent=Archivos &recientes
+ClearRecentFiles=Borrar archivos recientes
+NoRecentFiles=(Sin archivos recientes)
+FileExit=&Salir
+; Edit menu
+Edit=&Editar
+EditCut=Cor&tar
+EditCopy=&Copiar
+EditPaste=&Pegar
+EditSelectAll=Seleccionar &todo
+; Options menu
+Options=&Opciones
+OptionsLanguage=&Idioma
+OptionsPreferences=&Preferencias...
+; Help menu
+Help=A&yuda
+HelpAbout=&Acerca de
+
+[Dialog]
+ConfirmTitle=Confirmación
+ConfirmClear=¿Seguro que desea borrar la lista de archivos recientes?
+ConfirmReset=¿Restablecer el campo de nombre?
+ConfirmExit=¿Seguro que desea salir?
+WelcomeTitle=Bienvenido
+Welcome=¡Bienvenido, %s!
+DefaultName=mundo
+OpenFileTitle=Abrir archivo
+OpenFileFilter=Todos los archivos|*.*|Archivos de texto|*.txt
+
+[Status]
+Ready=Listo
+FileOpened=Archivo abierto: %s
+RecentCleared=Archivos recientes borrados
+LanguageChanged=Idioma cambiado
+
+[Message]
+ProgressFormat=Progreso: %d%%
+SummaryFormat=Hola %s — %d carácter(es), %d%% completado
+
+[Label]
+AppTitle=Plantilla i18n de Lazarus
+Title=Plantilla i18n de Lazarus
+Intro=Una plantilla reutilizable para aplicaciones de escritorio multilingües creadas con Free Pascal y Lazarus. Todo el texto siguiente se traduce mediante los archivos .lang.
+Name=Su nombre:
+NameHint=Escriba su nombre aquí
+Progress=Mueva el control deslizante para ver un porcentaje con formato:
+
+[Button]
+Open=Abrir
+Options=Opciones
+About=Acerca de
+Greet=Saludar
+Confirm=Restablecer...
+OK=Aceptar
+Cancel=Cancelar
+Apply=Aplicar
+Close=Cerrar
+Yes=Sí
+No=No
+
+[Tooltip]
+Open=Abrir un archivo
+Options=Abrir el diálogo de opciones
+About=Acerca de esta aplicación
+Greet=Mostrar un mensaje de bienvenida personalizado
+Name=Introduzca el nombre usado en el saludo
+
+[Options]
+Title=Opciones
+LanguageGroup=Idioma
+Language=Idioma:
+Hint=Los cambios se aplican al instante — no es necesario reiniciar la aplicación.
+
+[About]
+Title=Acerca de
+AppName=Plantilla i18n de Lazarus
+Version=Versión
+Description=Una plantilla reutilizable para aplicaciones de escritorio multilingües en Lazarus / Free Pascal.
+Author=Autor
+License=Licencia

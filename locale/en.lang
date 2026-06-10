@@ -1,0 +1,99 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  English language file — Lazarus i18n Template
+;
+;  INI format. Keys are in English and stay identical across every .lang file;
+;  only the values are translated.
+;     &        Alt accelerator (e.g. &File -> Alt+F)
+;     %s %d %f format placeholders (keep the same order in every translation)
+;     %%       a literal percent sign
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=English
+Code=en
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&File
+FileOpen=&Open File...
+FileRecent=&Recent Files
+ClearRecentFiles=Clear Recent Files
+NoRecentFiles=(No recent files)
+FileExit=E&xit
+; Edit menu
+Edit=&Edit
+EditCut=Cu&t
+EditCopy=&Copy
+EditPaste=&Paste
+EditSelectAll=Select &All
+; Options menu
+Options=&Options
+OptionsLanguage=&Language
+OptionsPreferences=&Preferences...
+; Help menu
+Help=&Help
+HelpAbout=&About
+
+[Dialog]
+ConfirmTitle=Confirmation
+ConfirmClear=Do you really want to clear the recent files list?
+ConfirmReset=Reset the name field?
+ConfirmExit=Are you sure you want to quit?
+WelcomeTitle=Welcome
+Welcome=Welcome, %s!
+DefaultName=World
+OpenFileTitle=Open File
+OpenFileFilter=All files|*.*|Text files|*.txt
+
+[Status]
+Ready=Ready
+FileOpened=File opened: %s
+RecentCleared=Recent files cleared
+LanguageChanged=Language changed
+
+[Message]
+ProgressFormat=Progress: %d%%
+SummaryFormat=Hello %s — %d character(s), %d%% done
+
+[Label]
+AppTitle=Lazarus i18n Template
+Title=Lazarus i18n Template
+Intro=A reusable template for multilingual desktop applications built with Free Pascal and Lazarus. Every string below is translated through the .lang files.
+Name=Your name:
+NameHint=Type your name here
+Progress=Move the slider to see a formatted percentage:
+
+[Button]
+Open=Open
+Options=Options
+About=About
+Greet=Greet
+Confirm=Reset...
+OK=OK
+Cancel=Cancel
+Apply=Apply
+Close=Close
+Yes=Yes
+No=No
+
+[Tooltip]
+Open=Open a file
+Options=Open the options dialog
+About=About this application
+Greet=Show a personalized welcome message
+Name=Enter the name used in the greeting
+
+[Options]
+Title=Options
+LanguageGroup=Language
+Language=Language:
+Hint=Changes apply instantly — no need to restart the application.
+
+[About]
+Title=About
+AppName=Lazarus i18n Template
+Version=Version
+Description=A reusable template for multilingual Lazarus / Free Pascal desktop applications.
+Author=Author
+License=License

@@ -1,0 +1,96 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  German language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=German - Deutsch
+Code=de
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&Datei
+FileOpen=Datei &öffnen...
+FileRecent=&Zuletzt geöffnet
+ClearRecentFiles=Zuletzt geöffnete löschen
+NoRecentFiles=(Keine zuletzt geöffneten Dateien)
+FileExit=&Beenden
+; Edit menu
+Edit=&Bearbeiten
+EditCut=&Ausschneiden
+EditCopy=&Kopieren
+EditPaste=Ein&fügen
+EditSelectAll=Alles &auswählen
+; Options menu
+Options=&Optionen
+OptionsLanguage=&Sprache
+OptionsPreferences=&Einstellungen...
+; Help menu
+Help=&Hilfe
+HelpAbout=&Über
+
+[Dialog]
+ConfirmTitle=Bestätigung
+ConfirmClear=Möchten Sie die Liste der zuletzt geöffneten Dateien wirklich leeren?
+ConfirmReset=Das Namensfeld zurücksetzen?
+ConfirmExit=Möchten Sie wirklich beenden?
+WelcomeTitle=Willkommen
+Welcome=Willkommen, %s!
+DefaultName=Welt
+OpenFileTitle=Datei öffnen
+OpenFileFilter=Alle Dateien|*.*|Textdateien|*.txt
+
+[Status]
+Ready=Bereit
+FileOpened=Datei geöffnet: %s
+RecentCleared=Zuletzt geöffnete Dateien geleert
+LanguageChanged=Sprache geändert
+
+[Message]
+ProgressFormat=Fortschritt: %d%%
+SummaryFormat=Hallo %s — %d Zeichen, %d%% erledigt
+
+[Label]
+AppTitle=Lazarus-i18n-Vorlage
+Title=Lazarus-i18n-Vorlage
+Intro=Eine wiederverwendbare Vorlage für mehrsprachige Desktop-Anwendungen mit Free Pascal und Lazarus. Jeder Text unten wird über die .lang-Dateien übersetzt.
+Name=Ihr Name:
+NameHint=Geben Sie hier Ihren Namen ein
+Progress=Bewegen Sie den Schieberegler, um einen formatierten Prozentsatz zu sehen:
+
+[Button]
+Open=Öffnen
+Options=Optionen
+About=Über
+Greet=Begrüßen
+Confirm=Zurücksetzen...
+OK=OK
+Cancel=Abbrechen
+Apply=Anwenden
+Close=Schließen
+Yes=Ja
+No=Nein
+
+[Tooltip]
+Open=Eine Datei öffnen
+Options=Den Optionen-Dialog öffnen
+About=Über diese Anwendung
+Greet=Eine persönliche Begrüßung anzeigen
+Name=Den Namen für die Begrüßung eingeben
+
+[Options]
+Title=Optionen
+LanguageGroup=Sprache
+Language=Sprache:
+Hint=Änderungen werden sofort übernommen — kein Neustart der Anwendung nötig.
+
+[About]
+Title=Über
+AppName=Lazarus-i18n-Vorlage
+Version=Version
+Description=Eine wiederverwendbare Vorlage für mehrsprachige Lazarus-/Free-Pascal-Desktop-Anwendungen.
+Author=Autor
+License=Lizenz

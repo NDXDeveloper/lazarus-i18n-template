@@ -1,0 +1,96 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Russian language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Russian - Русский
+Code=ru
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&Файл
+FileOpen=&Открыть файл...
+FileRecent=&Недавние файлы
+ClearRecentFiles=Очистить недавние файлы
+NoRecentFiles=(Нет недавних файлов)
+FileExit=В&ыход
+; Edit menu
+Edit=&Правка
+EditCut=Вы&резать
+EditCopy=&Копировать
+EditPaste=Вст&авить
+EditSelectAll=Выделить &всё
+; Options menu
+Options=&Параметры
+OptionsLanguage=&Язык
+OptionsPreferences=&Настройки...
+; Help menu
+Help=&Справка
+HelpAbout=&О программе
+
+[Dialog]
+ConfirmTitle=Подтверждение
+ConfirmClear=Вы действительно хотите очистить список недавних файлов?
+ConfirmReset=Сбросить поле имени?
+ConfirmExit=Вы действительно хотите выйти?
+WelcomeTitle=Добро пожаловать
+Welcome=Добро пожаловать, %s!
+DefaultName=мир
+OpenFileTitle=Открыть файл
+OpenFileFilter=Все файлы|*.*|Текстовые файлы|*.txt
+
+[Status]
+Ready=Готово
+FileOpened=Файл открыт: %s
+RecentCleared=Недавние файлы очищены
+LanguageChanged=Язык изменён
+
+[Message]
+ProgressFormat=Прогресс: %d%%
+SummaryFormat=Привет, %s — символов: %d, выполнено %d%%
+
+[Label]
+AppTitle=Шаблон i18n для Lazarus
+Title=Шаблон i18n для Lazarus
+Intro=Многоразовый шаблон для многоязычных настольных приложений на Free Pascal и Lazarus. Весь текст ниже переводится через файлы .lang.
+Name=Ваше имя:
+NameHint=Введите здесь ваше имя
+Progress=Переместите ползунок, чтобы увидеть форматированный процент:
+
+[Button]
+Open=Открыть
+Options=Параметры
+About=О программе
+Greet=Поприветствовать
+Confirm=Сбросить...
+OK=OK
+Cancel=Отмена
+Apply=Применить
+Close=Закрыть
+Yes=Да
+No=Нет
+
+[Tooltip]
+Open=Открыть файл
+Options=Открыть окно параметров
+About=О программе
+Greet=Показать персональное приветствие
+Name=Введите имя для приветствия
+
+[Options]
+Title=Параметры
+LanguageGroup=Язык
+Language=Язык:
+Hint=Изменения применяются мгновенно — перезапуск приложения не требуется.
+
+[About]
+Title=О программе
+AppName=Шаблон i18n для Lazarus
+Version=Версия
+Description=Многоразовый шаблон для многоязычных настольных приложений на Lazarus / Free Pascal.
+Author=Автор
+License=Лицензия

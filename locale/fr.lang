@@ -1,0 +1,99 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Fichier de langue française — Modèle i18n Lazarus
+;
+;  Format INI. Les clés sont en anglais et restent identiques dans tous les
+;  fichiers .lang ; seules les valeurs sont traduites.
+;     &        accélérateur Alt (ex. &Fichier -> Alt+F)
+;     %s %d %f marqueurs de format (conserver le même ordre que l'anglais)
+;     %%       un signe pourcent littéral
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=French - Français
+Code=fr
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; Menu Fichier
+File=&Fichier
+FileOpen=&Ouvrir un fichier...
+FileRecent=Fichiers &récents
+ClearRecentFiles=Effacer les fichiers récents
+NoRecentFiles=(Aucun fichier récent)
+FileExit=&Quitter
+; Menu Édition
+Edit=&Édition
+EditCut=Co&uper
+EditCopy=&Copier
+EditPaste=Co&ller
+EditSelectAll=Tout &sélectionner
+; Menu Options
+Options=&Options
+OptionsLanguage=&Langue
+OptionsPreferences=&Préférences...
+; Menu Aide
+Help=&Aide
+HelpAbout=À &propos
+
+[Dialog]
+ConfirmTitle=Confirmation
+ConfirmClear=Voulez-vous vraiment effacer la liste des fichiers récents ?
+ConfirmReset=Réinitialiser le champ du nom ?
+ConfirmExit=Voulez-vous vraiment quitter ?
+WelcomeTitle=Bienvenue
+Welcome=Bienvenue, %s !
+DefaultName=tout le monde
+OpenFileTitle=Ouvrir un fichier
+OpenFileFilter=Tous les fichiers|*.*|Fichiers texte|*.txt
+
+[Status]
+Ready=Prêt
+FileOpened=Fichier ouvert : %s
+RecentCleared=Fichiers récents effacés
+LanguageChanged=Langue changée
+
+[Message]
+ProgressFormat=Progression : %d %%
+SummaryFormat=Bonjour %s — %d caractère(s), %d %% effectué
+
+[Label]
+AppTitle=Modèle i18n Lazarus
+Title=Modèle i18n Lazarus
+Intro=Un modèle réutilisable pour des applications de bureau multilingues conçues avec Free Pascal et Lazarus. Tout le texte ci-dessous est traduit via les fichiers .lang.
+Name=Votre nom :
+NameHint=Saisissez votre nom ici
+Progress=Déplacez le curseur pour voir un pourcentage formaté :
+
+[Button]
+Open=Ouvrir
+Options=Options
+About=À propos
+Greet=Saluer
+Confirm=Réinitialiser...
+OK=OK
+Cancel=Annuler
+Apply=Appliquer
+Close=Fermer
+Yes=Oui
+No=Non
+
+[Tooltip]
+Open=Ouvrir un fichier
+Options=Ouvrir la boîte de dialogue des options
+About=À propos de cette application
+Greet=Afficher un message de bienvenue personnalisé
+Name=Saisissez le nom utilisé dans le message
+
+[Options]
+Title=Options
+LanguageGroup=Langue
+Language=Langue :
+Hint=Les changements s'appliquent immédiatement — aucun redémarrage requis.
+
+[About]
+Title=À propos
+AppName=Modèle i18n Lazarus
+Version=Version
+Description=Un modèle réutilisable pour des applications de bureau multilingues en Lazarus / Free Pascal.
+Author=Auteur
+License=Licence

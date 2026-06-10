@@ -1,0 +1,98 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Moroccan Arabic (Darija) language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+;  Arabic script, colloquial Moroccan; technical terms borrow from MSA.
+;  Code 'ary' (ISO 639-3): selectable from the menu (2-letter auto-detect = ar).
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Moroccan Arabic - الدارجة المغربية
+Code=ary
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&ملف
+FileOpen=&حل ملف...
+FileRecent=الملفات ال&أخيرة
+ClearRecentFiles=مسح الملفات الأخيرة
+NoRecentFiles=(ما كاين حتى ملف أخير)
+FileExit=&خروج
+; Edit menu
+Edit=ت&عديل
+EditCut=&قص
+EditCopy=&نسخ
+EditPaste=&لصق
+EditSelectAll=ختيار ال&كل
+; Options menu
+Options=&خيارات
+OptionsLanguage=&لغة
+OptionsPreferences=ت&فضيلات...
+; Help menu
+Help=م&ساعدة
+HelpAbout=&حول
+
+[Dialog]
+ConfirmTitle=تأكيد
+ConfirmClear=واش بصح بغيتي تمسح لائحة الملفات الأخيرة؟
+ConfirmReset=ترجّع خانة الاسم خاوية؟
+ConfirmExit=واش متأكد بغيتي تخرج؟
+WelcomeTitle=مرحبا
+Welcome=مرحبا، %s!
+DefaultName=العالم
+OpenFileTitle=حل ملف
+OpenFileFilter=گاع الملفات|*.*|ملفات نصية|*.txt
+
+[Status]
+Ready=واجد
+FileOpened=تحل الملف: %s
+RecentCleared=تمسحو الملفات الأخيرة
+LanguageChanged=تبدلات اللغة
+
+[Message]
+ProgressFormat=التقدم: %d%%
+SummaryFormat=أهلا %s — %d حرف، كمل %d%%
+
+[Label]
+AppTitle=قالب i18n ديال Lazarus
+Title=قالب i18n ديال Lazarus
+Intro=قالب يتعاود استعمالو لتطبيقات سطح المكتب بزاف د اللغات، مبني ب Free Pascal و Lazarus. گاع النص اللي تحت متّرجم عبر ملفات lang.
+Name=سميتك:
+NameHint=كتب سميتك هنا
+Progress=حرّك المنزلق باش تشوف نسبة مئوية منسقة:
+
+[Button]
+Open=حل
+Options=خيارات
+About=حول
+Greet=سلّم
+Confirm=ترجيع...
+OK=واخا
+Cancel=لغي
+Apply=طبّق
+Close=سدّ
+Yes=أيه
+No=لا
+
+[Tooltip]
+Open=حل ملف
+Options=حل مربع حوار الخيارات
+About=حول هاد التطبيق
+Greet=وري رسالة ترحيب مخصصة
+Name=دخّل السمية اللي كتستعمل فالترحيب
+
+[Options]
+Title=خيارات
+LanguageGroup=اللغة
+Language=اللغة:
+Hint=التبديلات كيتطبقو دغيا — ما خاصكش تعاود تشغل التطبيق.
+
+[About]
+Title=حول
+AppName=قالب i18n ديال Lazarus
+Version=الإصدار
+Description=قالب يتعاود استعمالو لتطبيقات سطح المكتب بزاف د اللغات ف Lazarus / Free Pascal.
+Author=المؤلف
+License=الرخصة

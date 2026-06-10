@@ -1,0 +1,97 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Arabic language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+;  Right-to-left script; the & may sit before an Arabic letter.
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Arabic - العربية
+Code=ar
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&ملف
+FileOpen=&فتح ملف...
+FileRecent=الملفات ال&حديثة
+ClearRecentFiles=مسح الملفات الحديثة
+NoRecentFiles=(لا توجد ملفات حديثة)
+FileExit=&خروج
+; Edit menu
+Edit=ت&حرير
+EditCut=&قص
+EditCopy=&نسخ
+EditPaste=&لصق
+EditSelectAll=تحديد ال&كل
+; Options menu
+Options=&خيارات
+OptionsLanguage=&لغة
+OptionsPreferences=ت&فضيلات...
+; Help menu
+Help=م&ساعدة
+HelpAbout=&حول
+
+[Dialog]
+ConfirmTitle=تأكيد
+ConfirmClear=هل تريد حقًا مسح قائمة الملفات الحديثة؟
+ConfirmReset=إعادة تعيين حقل الاسم؟
+ConfirmExit=هل أنت متأكد أنك تريد الخروج؟
+WelcomeTitle=مرحبًا
+Welcome=مرحبًا، %s!
+DefaultName=العالم
+OpenFileTitle=فتح ملف
+OpenFileFilter=كل الملفات|*.*|ملفات نصية|*.txt
+
+[Status]
+Ready=جاهز
+FileOpened=تم فتح الملف: %s
+RecentCleared=تم مسح الملفات الحديثة
+LanguageChanged=تم تغيير اللغة
+
+[Message]
+ProgressFormat=التقدّم: %d%%
+SummaryFormat=مرحبًا %s — عدد الأحرف %d، اكتمل %d%%
+
+[Label]
+AppTitle=قالب i18n للغة Lazarus
+Title=قالب i18n للغة Lazarus
+Intro=قالب قابل لإعادة الاستخدام لتطبيقات سطح المكتب متعددة اللغات، مبني باستخدام Free Pascal وLazarus. كل النص أدناه مُترجَم عبر ملفات lang.
+Name=اسمك:
+NameHint=اكتب اسمك هنا
+Progress=حرّك المنزلق لرؤية نسبة مئوية منسّقة:
+
+[Button]
+Open=فتح
+Options=خيارات
+About=حول
+Greet=ترحيب
+Confirm=إعادة تعيين...
+OK=موافق
+Cancel=إلغاء
+Apply=تطبيق
+Close=إغلاق
+Yes=نعم
+No=لا
+
+[Tooltip]
+Open=فتح ملف
+Options=فتح مربع حوار الخيارات
+About=حول هذا التطبيق
+Greet=عرض رسالة ترحيب مخصّصة
+Name=أدخل الاسم المستخدم في الترحيب
+
+[Options]
+Title=خيارات
+LanguageGroup=اللغة
+Language=اللغة:
+Hint=تُطبَّق التغييرات فورًا — لا حاجة لإعادة تشغيل التطبيق.
+
+[About]
+Title=حول
+AppName=قالب i18n للغة Lazarus
+Version=الإصدار
+Description=قالب قابل لإعادة الاستخدام لتطبيقات سطح المكتب متعددة اللغات في Lazarus / Free Pascal.
+Author=المؤلف
+License=الترخيص

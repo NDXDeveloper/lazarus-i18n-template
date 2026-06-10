@@ -1,0 +1,97 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Chinese (Simplified) language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+;  CJK accelerator convention: 文本(&X)
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Chinese - 简体中文
+Code=zh
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=文件(&F)
+FileOpen=打开文件(&O)...
+FileRecent=最近的文件(&R)
+ClearRecentFiles=清除最近的文件
+NoRecentFiles=(无最近文件)
+FileExit=退出(&X)
+; Edit menu
+Edit=编辑(&E)
+EditCut=剪切(&T)
+EditCopy=复制(&C)
+EditPaste=粘贴(&P)
+EditSelectAll=全选(&A)
+; Options menu
+Options=选项(&O)
+OptionsLanguage=语言(&L)
+OptionsPreferences=首选项(&P)...
+; Help menu
+Help=帮助(&H)
+HelpAbout=关于(&A)
+
+[Dialog]
+ConfirmTitle=确认
+ConfirmClear=确实要清除最近的文件列表吗？
+ConfirmReset=重置名称字段吗？
+ConfirmExit=确实要退出吗？
+WelcomeTitle=欢迎
+Welcome=欢迎，%s！
+DefaultName=世界
+OpenFileTitle=打开文件
+OpenFileFilter=所有文件|*.*|文本文件|*.txt
+
+[Status]
+Ready=就绪
+FileOpened=已打开文件：%s
+RecentCleared=已清除最近的文件
+LanguageChanged=语言已更改
+
+[Message]
+ProgressFormat=进度：%d%%
+SummaryFormat=你好 %s — %d 个字符，完成 %d%%
+
+[Label]
+AppTitle=Lazarus i18n 模板
+Title=Lazarus i18n 模板
+Intro=用 Free Pascal 和 Lazarus 构建的多语言桌面应用程序可重用模板。下面的所有文本均通过 .lang 文件翻译。
+Name=您的姓名：
+NameHint=在此输入您的姓名
+Progress=移动滑块以查看格式化的百分比：
+
+[Button]
+Open=打开
+Options=选项
+About=关于
+Greet=问候
+Confirm=重置...
+OK=确定
+Cancel=取消
+Apply=应用
+Close=关闭
+Yes=是
+No=否
+
+[Tooltip]
+Open=打开一个文件
+Options=打开选项对话框
+About=关于此应用程序
+Greet=显示个性化的欢迎消息
+Name=输入用于问候的姓名
+
+[Options]
+Title=选项
+LanguageGroup=语言
+Language=语言：
+Hint=更改立即生效 — 无需重启应用程序。
+
+[About]
+Title=关于
+AppName=Lazarus i18n 模板
+Version=版本
+Description=用于 Lazarus / Free Pascal 多语言桌面应用程序的可重用模板。
+Author=作者
+License=许可证

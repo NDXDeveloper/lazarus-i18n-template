@@ -1,0 +1,96 @@
+; ─────────────────────────────────────────────────────────────────────────────
+;  Italian language file — Lazarus i18n Template
+;
+;  INI format. Keys stay identical across every .lang file; only values change.
+;     &        Alt accelerator       %s %d %f  placeholders       %%  percent
+; ─────────────────────────────────────────────────────────────────────────────
+
+[Language]
+Name=Italian - Italiano
+Code=it
+Author=Nicolas DEOUX (NDXDev@gmail.com)
+
+[Menu]
+; File menu
+File=&File
+FileOpen=&Apri file...
+FileRecent=File &recenti
+ClearRecentFiles=Cancella file recenti
+NoRecentFiles=(Nessun file recente)
+FileExit=&Esci
+; Edit menu
+Edit=&Modifica
+EditCut=&Taglia
+EditCopy=&Copia
+EditPaste=&Incolla
+EditSelectAll=Seleziona &tutto
+; Options menu
+Options=&Opzioni
+OptionsLanguage=&Lingua
+OptionsPreferences=&Preferenze...
+; Help menu
+Help=&Aiuto
+HelpAbout=&Informazioni
+
+[Dialog]
+ConfirmTitle=Conferma
+ConfirmClear=Vuoi davvero cancellare l'elenco dei file recenti?
+ConfirmReset=Reimpostare il campo del nome?
+ConfirmExit=Sei sicuro di voler uscire?
+WelcomeTitle=Benvenuto
+Welcome=Benvenuto, %s!
+DefaultName=mondo
+OpenFileTitle=Apri file
+OpenFileFilter=Tutti i file|*.*|File di testo|*.txt
+
+[Status]
+Ready=Pronto
+FileOpened=File aperto: %s
+RecentCleared=File recenti cancellati
+LanguageChanged=Lingua cambiata
+
+[Message]
+ProgressFormat=Avanzamento: %d%%
+SummaryFormat=Ciao %s — %d carattere/i, %d%% completato
+
+[Label]
+AppTitle=Modello i18n Lazarus
+Title=Modello i18n Lazarus
+Intro=Un modello riutilizzabile per applicazioni desktop multilingue create con Free Pascal e Lazarus. Tutto il testo seguente è tradotto tramite i file .lang.
+Name=Il tuo nome:
+NameHint=Digita qui il tuo nome
+Progress=Sposta il cursore per vedere una percentuale formattata:
+
+[Button]
+Open=Apri
+Options=Opzioni
+About=Informazioni
+Greet=Saluta
+Confirm=Reimposta...
+OK=OK
+Cancel=Annulla
+Apply=Applica
+Close=Chiudi
+Yes=Sì
+No=No
+
+[Tooltip]
+Open=Apri un file
+Options=Apri la finestra delle opzioni
+About=Informazioni su questa applicazione
+Greet=Mostra un messaggio di benvenuto personalizzato
+Name=Inserisci il nome usato nel saluto
+
+[Options]
+Title=Opzioni
+LanguageGroup=Lingua
+Language=Lingua:
+Hint=Le modifiche si applicano immediatamente — non serve riavviare l'applicazione.
+
+[About]
+Title=Informazioni
+AppName=Modello i18n Lazarus
+Version=Versione
+Description=Un modello riutilizzabile per applicazioni desktop multilingue in Lazarus / Free Pascal.
+Author=Autore
+License=Licenza

@@ -1,0 +1,81 @@
+name: Build
+
+# Compiles the template on Linux (gtk2) and Windows (win32) with Lazarus/FPC,
+# checks that every .lang file is in sync, and uploads the runnable result.
+# This is also what validates the {$IFDEF WINDOWS} OS-language detection branch.
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+  workflow_dispatch:
+
+# Least-privilege token. Declaring `permissions:` sets every UNLISTED scope to
+# `none`, so we must list everything the job needs. Since Jan 2026 the artifact
+# metadata APIs use the new fine-grained `artifact-metadata` scope (the old
+# `contents`-based path was deprecated on 2026-02-03), so uploading an artifact
+# requires it explicitly.
+permissions:
+  contents: read            # actions/checkout reads the repository
+  artifact-metadata: write  # actions/upload-artifact creates the artifact record
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # The Linux LCL build targets the gtk2 widgetset, which needs its dev
+      # libraries to link. Windows uses the native win32 widgetset (nothing to do).
+      - name: Install GTK2 (Linux only)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk2.0-dev
+
+      # Installs Lazarus + FPC on every OS. Pin lazarus-version to e.g. "3.2"
+      # or "3.0" for a fixed toolchain; "stable" tracks the latest release.
+      - name: Install Lazarus + FPC
+        uses: gcarreno/setup-lazarus@v3
+        with:
+          lazarus-version: stable
+          with-cache: true
+
+      - name: Toolchain versions
+        run: |
+          lazbuild --version
+          fpc -iV
+
+      - name: Build (lazbuild)
+        run: lazbuild lazarus_i18n_template.lpi
+
+      - name: Check that all .lang files share the same keys
+        if: runner.os == 'Linux'
+        run: bash scripts/check-keys.sh
+
+      # The executable is built next to locale/ (project root); bundle both so
+      # the artifact is runnable as-is.
+      - name: Stage runnable output (binary + locale)
+        shell: bash
+        run: |
+          mkdir -p dist
+          cp -R locale dist/
+          if [ "$RUNNER_OS" = "Windows" ]; then
+            cp lazarus_i18n_template.exe dist/
+          else
+            cp lazarus_i18n_template dist/
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lazarus-i18n-template-${{ runner.os }}
+          path: dist/
+          if-no-files-found: error
